@@ -1,20 +1,13 @@
  /* Child Element */
   main {
-    /* padding: 32px 72px;
-    display: flex;
-    gap: 15px */
     background-color: rgb(53, 0, 121);
-    border: 5px;
+    border: 20px;
+    border-style: solid;
     border-color: black;
     padding: 40px;
   }
 
-  div.card {
-
-  }
-
   body {
-    background-color: rgb(53, 0, 121);
     border: 5px;
     border-color: black;
     padding: 40px;
