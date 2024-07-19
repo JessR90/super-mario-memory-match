@@ -1,0 +1,25 @@
+ /* Child Element */
+  main {
+    background-color: white;
+    padding: 32px 72px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    gap: 15px
+    
+  }
+
+  .card {
+    width: 150px;
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row; 
+  }
+ 
+  
+
+  
+
+  
+ 
