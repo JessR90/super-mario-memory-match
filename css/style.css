@@ -11,7 +11,7 @@ body {
   border: 5px;
   border-color: black;
   padding: 70px;
-  max-height: fit-content;
+  max-height: 100vh;
   background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px)
 }
 
@@ -33,7 +33,7 @@ nav {
   justify-content: center;
 }
 
-#btn {
+#reset {
   margin: auto;
   padding: 10px;
   border-radius: 5px;
