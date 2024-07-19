@@ -6,7 +6,9 @@
     flex-wrap:wrap;
     flex-direction:row;
     gap: 15px
-    
+  }
+
+  body {
   }
 
   .card {
@@ -17,7 +19,7 @@
     flex-direction: row; 
   }
  
-  
+
 
   
 
