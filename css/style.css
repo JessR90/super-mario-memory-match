@@ -9,14 +9,18 @@
   }
 
   body {
+    background-size: cover;
+    background-position: center top;
   }
 
   .card {
     width: 150px;
-    height: 200px;
-    background-color: gray;
+    height: 225px;
+    background-color: black;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    justify-content: center;
+    padding: 2.5px;
   }
  
 
