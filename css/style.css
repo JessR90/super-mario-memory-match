@@ -24,7 +24,6 @@ body {
   margin: 10px;
   border-radius: 10px;
   border: thick solid white;
-  <img src="images/card back/N Spade Card Back.png" alt="yellow checkered card with large N">
 }
 
 .container {
@@ -48,7 +47,7 @@ nav {
   border: 5px solid black;
   display: flex;
   justify-content: center;
-  font-family: "font/super mario font.woff", sans-serif;
+  font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 20px;
   margin-bottom: 5px;
   background-color: rgba(52, 0, 121, 0.971);
@@ -57,7 +56,7 @@ nav {
 } 
 
 h1 {
-  font-family: "font/super mario font.woff", sans-serif;
+  font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 55px;
   display: flex;
   justify-content: center;
