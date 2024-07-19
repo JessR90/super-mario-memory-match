@@ -27,21 +27,39 @@ body {
   justify-content:space-between
 }
 
-/* #background {
-  background-image: url("images/background/Background Image.png");
-  background-size:cover;
-}  */
 
+nav {
+  display: flex;
+  justify-content: center;
+}
 
 #btn {
   margin: auto;
   padding: 10px;
   border-radius: 5px;
-  color: black;
-  background-color: white;
   font-weight: bold;
-  border: 3px solid black;
-  font-family: "Super Mario", sans-serif;
+  border: 5px solid black;
   display: flex;
   justify-content: center;
+  font-family: "font/super mario font.woff", sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  background-color: rgba(52, 0, 121, 0.971);
+  color: white;
 } 
+
+h1 {
+  font-family: "font/super mario font.woff", sans-serif;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  font-weight:bold;
+  font-style:italic;
+  font-variant:small-caps; 
+  background-color: rgba(52, 0, 121, 0.971);
+  color: white;
+  border-radius: 5px;
+  border: 10px solid black;
+  padding: 10px;
+}
