@@ -1,34 +1,47 @@
  /* Child Element */
-  main {
-    background-color: rgb(53, 0, 121);
-    border: 20px;
-    border-style: solid;
-    border-color: black;
-    padding: 40px;
-  }
+main {
+  background-color: rgba(52, 0, 121, 0.971);
+  border: 20px;
+  border-style: solid;
+  border-color: black;
+  padding: 40px;   
+}
 
-  body {
-    border: 5px;
-    border-color: black;
-    padding: 40px;
-  }
+body {
+  border: 5px;
+  border-color: black;
+  padding: 70px;
+  max-height: fit-content;
+  background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px)
+}
 
-  .card {
-    width: 135px;
-    height: 200px;
-  }
+.card {
+  width: 135px;
+  height: 200px;
+}
 
-  .container {
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+.container {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between
+}
 
- 
+/* #background {
+  background-image: url("images/background/Background Image.png");
+  background-size:cover;
+}  */
 
 
-  
-
-  
- 
+#btn {
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border: 3px solid black;
+  font-family: "Super Mario", sans-serif;
+  display: flex;
+  justify-content: center;
+} 
