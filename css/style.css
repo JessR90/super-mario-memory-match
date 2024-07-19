@@ -19,6 +19,12 @@ body {
 .card {
   width: 135px;
   height: 200px;
+  background-color: black;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: thick solid white;
+  <img src="images/card back/N Spade Card Back.png" alt="yellow checkered card with large N">
 }
 
 .container {
