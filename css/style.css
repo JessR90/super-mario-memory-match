@@ -4,7 +4,8 @@ main {
   border: 20px;
   border-style: solid;
   border-color: black;
-  padding: 40px;   
+  padding: 40px;
+  border-style: ridge;
 }
 
 body {
@@ -46,6 +47,7 @@ nav {
   margin-bottom: 5px;
   background-color: rgba(52, 0, 121, 0.971);
   color: white;
+  border-style:ridge;
 } 
 
 h1 {
@@ -62,4 +64,5 @@ h1 {
   border-radius: 5px;
   border: 10px solid black;
   padding: 10px;
+  border-style:ridge;
 }
