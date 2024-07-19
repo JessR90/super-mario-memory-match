@@ -1,6 +1,6 @@
  /* Child Element */
   main {
-    background-color: white;
+    background-color: rgb(53, 0, 121);
     padding: 32px 72px;
     display: flex;
     flex-wrap:wrap;
