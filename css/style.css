@@ -1,25 +1,37 @@
  /* Child Element */
   main {
-    background-color: rgb(53, 0, 121);
-    padding: 32px 72px;
+    /* padding: 32px 72px;
     display: flex;
-    flex-wrap:wrap;
-    gap: 15px
+    gap: 15px */
+    background-color: rgb(53, 0, 121);
+    border: 5px;
+    border-color: black;
+    padding: 40px;
+  }
+
+  div.card {
+
   }
 
   body {
-    background-position: center top;
-    background-image: url("/images/Background\ Image.png")
+    background-color: rgb(53, 0, 121);
+    border: 5px;
+    border-color: black;
+    padding: 40px;
   }
 
   .card {
     width: 135px;
     height: 200px;
-    display: flex;
+  }
+
+  .container {
     flex-direction: row;
-    padding: 2.5px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
  
 
 
