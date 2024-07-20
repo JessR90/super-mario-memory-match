@@ -57,7 +57,7 @@ nav {
   cursor: pointer;
 } 
 
-h1 {
+span {
   font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 55px;
   display: flex;
