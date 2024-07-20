@@ -16,15 +16,14 @@ body {
   max-width: min-content;
 }
 
-.cards {
+#flower, #star, #mushroom, #chest, #tencoin, #twentycoin {
   width: 100px;
   height: 150px;
-  background-color: black;
+  background-color:dimgray;
   border-radius: 10px;
   border: thick solid white;
   margin: auto;
 }
-
 
 .row1, .row2, .row3  {
   flex-direction: row;
@@ -34,7 +33,6 @@ body {
   padding: 10px;
   cursor: pointer;
 }
-
 
 nav {
   display: flex;
