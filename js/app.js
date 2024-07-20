@@ -56,7 +56,7 @@ function render() {
 function updateCardPlay() {
     cardPlay.forEach((selection, idx) => {
         if (selection === "match") {
-            cards[idx].style.backgroundImg =URL("assets/images/card front/1-Up.png") 
+        //  
         }else (selection === "miss")
         // 
     });
@@ -66,7 +66,7 @@ function updateCardPlay() {
 
 
 /*----------------------------- Event Listeners -----------------------------*/
-// resetButton.addEventListener("click",)
+resetButton.addEventListener("click", resetGame)
 
 // cards.forEach((cardSelect) => {
 //     cardSelect.addEventListener("click", handleClick)  
