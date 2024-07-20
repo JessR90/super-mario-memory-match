@@ -28,7 +28,6 @@ const gameWon = new Audio("assets/audio/Game Won.mp3")
 
 /*------------------------ Cached Element References ------------------------*/
 // const resetBtnEl = document.getElementById("reset")
-// // console.log(reset);
 // const 
 
 
