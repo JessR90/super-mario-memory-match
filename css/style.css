@@ -6,13 +6,13 @@ main {
   border-color: black;
   padding: 40px;
   border-style: ridge;
+  max-width:max-content;
+  margin: auto;
+  max-height: max-content;
 }
 
 body {
-  border: 5px;
-  border-color: black;
-  padding: 70px;
-  max-height: 100vh;
+  padding: 80px;
   background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px)
 }
 
@@ -21,7 +21,7 @@ body {
   height: 200px;
   background-color: black;
   padding: 5px;
-  margin: 10px;
+  margin: 40px;
   border-radius: 10px;
   border: thick solid white;
 }
@@ -29,8 +29,7 @@ body {
 .container {
   flex-direction: row;
   display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between
+  justify-content:space-between;
 }
 
 
@@ -42,17 +41,16 @@ nav {
 #reset {
   margin: auto;
   padding: 10px;
-  border-radius: 5px;
   font-weight: bold;
-  border: 5px solid black;
+  border: 10px solid black;
   display: flex;
   justify-content: center;
   font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 20px;
-  margin-bottom: 5px;
   background-color: rgba(52, 0, 121, 0.971);
   color: white;
   border-style:ridge;
+  margin-bottom: 10px;
 } 
 
 h1 {
@@ -61,6 +59,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: -70px;
+  margin-bottom: 10px;
   font-weight:bold;
   font-style:italic;
   font-variant:small-caps; 
@@ -68,6 +67,13 @@ h1 {
   color: white;
   border-radius: 5px;
   border: 10px solid black;
-  padding: 10px;
   border-style:ridge;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
+
