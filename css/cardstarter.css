@@ -1,0 +1,27 @@
+.card.1up {
+  background-image: url("assets/images/card front/1-Up.png"); 
+}
+
+.card.10coin {
+    background-image: url("assets/images/card front/10 Coin.png"); 
+}
+
+.card.20coin {
+    background-image: url("assets/images/card front/20 Coin.png");
+}
+
+.card.flower {
+    background-image: url("assets/images/card front/Fire Flower.png");
+}
+
+.card.mushroom {
+    background-image: url("assets/images/card front/Mushroom.png");
+}
+
+.card.star {
+    background-image: url("assets/images/card front/Star.png");
+}
+
+.cards {
+    background-image: url("assets/images/card back/N Spade Card Back.png");
+}

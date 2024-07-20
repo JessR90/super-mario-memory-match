@@ -1,5 +1,9 @@
- /* Child Element */
-main {
+body {
+  padding: 80px;
+  background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px)
+}
+
+.cardPlay {
   background-color: rgba(52, 0, 121, 0.971);
   border: 20px;
   border-style: solid;
@@ -12,12 +16,7 @@ main {
   max-width: min-content;
 }
 
-body {
-  padding: 80px;
-  background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px)
-}
-
-.card {
+.cards {
   width: 100px;
   height: 150px;
   background-color: black;
@@ -26,12 +25,14 @@ body {
   margin: auto;
 }
 
-.container {
+
+.row1, .row2, .row3  {
   flex-direction: row;
   display: flex;
   justify-content:space-between;
   gap: 20px;
   padding: 10px;
+  cursor: pointer;
 }
 
 
@@ -53,6 +54,7 @@ nav {
   color: white;
   border-style:ridge;
   margin-bottom: 10px;
+  cursor: pointer;
 } 
 
 h1 {
@@ -78,4 +80,3 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
-

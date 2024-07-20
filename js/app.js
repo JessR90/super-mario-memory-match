@@ -22,32 +22,55 @@ const gameOver = new Audio("assets/audio/If lost Game Over.mp3")
 const gameWon = new Audio("assets/audio/Game Won.mp3")
 
 
+
+
 /*---------------------------- Variables (state) ----------------------------*/
-// let board, win, loss
+let cardPlay, win, loss
+let cardsLeft = []
+let turn = 1;
 
 
 /*------------------------ Cached Element References ------------------------*/
-// const resetBtnEl = document.getElementById("reset")
-// const 
+const resetButton = document.getElementById("reset")
+// console.log(reset);
+
+const cards = document.querySelectorAll(".cards")
+// console.log(cards);
+
 
 
 /*-------------------------------- Functions --------------------------------*/
-// init()
+init()
 
-// function init() {
-//     board = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
-//     render()
-// }
+function init() {
+    cardPlay = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    match = "yay"
+    miss = "nay"
+    render()
+}
 
-// function render() {
-//     updateBoard()
-// }
+function render() {
+    updateCardPlay()
+}
+
+function updateCardPlay() {
+    cardPlay.forEach((selection, idx) => {
+        if (selection === "match") {
+            cards[idx].style.backgroundImg =URL("assets/images/card front/1-Up.png") 
+        }else (selection === "miss")
+        // 
+    });
+}
 
 
 
 
 /*----------------------------- Event Listeners -----------------------------*/
-// resetBtnEl.addEventListener("click", init)
+// resetButton.addEventListener("click",)
+
+// cards.forEach((cardSelect) => {
+//     cardSelect.addEventListener("click", handleClick)  
+// });
 
 
 
