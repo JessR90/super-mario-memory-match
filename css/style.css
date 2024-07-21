@@ -1,37 +1,6 @@
 body {
   padding: 80px;
-  background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px)
-}
-
-.cardPlay {
-  background-color: rgba(52, 0, 121, 0.971);
-  border: 20px;
-  border-style: solid;
-  border-color: black;
-  padding: 40px;
-  border-style: ridge;
-  max-height: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: min-content;
-}
-
-#flower, #star, #mushroom, #chest, #tencoin, #twentycoin {
-  width: 100px;
-  height: 150px;
-  background-color:dimgray;
-  border-radius: 10px;
-  border: thick solid white;
-  margin: auto;
-}
-
-.row1, .row2, .row3  {
-  flex-direction: row;
-  display: flex;
-  justify-content:space-between;
-  gap: 20px;
-  padding: 10px;
-  cursor: pointer;
+  background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px);
 }
 
 nav {
@@ -39,7 +8,7 @@ nav {
   justify-content: center;
 }
 
-#reset {
+#reset, #easy, #classic, #hard {
   margin: auto;
   padding: 10px;
   font-weight: bold;
@@ -77,4 +46,19 @@ span {
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+.table {
+  background-color: rgba(52, 0, 121, 0.971);
+  border: 20px;
+  border-style: solid;
+  border-color: black;
+  border-style: ridge;
+  display: grid;
+  justify-items:center;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows:repeat(3);
+  grid-row-gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }

@@ -1,23 +1,38 @@
 #chest {
-  background-image: url("assets/images/card front/1-Up.png"); 
+  background-image: url("assets/images/card front/chest.png"); 
 }
 
 #tencoin {
-    background-image: url("assets/images/card front/10 Coin.png"); 
+    background-image: url("assets/images/card front/tencoin.png"); 
 }
 
 #twentycoin {
-    background-image: url("assets/images/card front/20 Coin.png");
+    background-image: url("assets/images/card front/twentycoin.png.png");
 }
 
 #flower {
-    background-image: url("assets/images/card front/Fire Flower.png");
+    background-image: url("assets/images/card front/flower.png");
 }
 
 #mushroom {
-    background-image: url("assets/images/card front/Mushroom.png");
+    background-image: url("assets/images/card front/mushroom.png");
 }
 
 #star {
-    background-image: url("assets/images/card front/Star.png");
+    background-image: url("assets/images/card front/star.png");
+}
+
+#flower, #star, #mushroom, #chest, #tencoin, #twentycoin {
+    width: 100px;
+    height: 150px;
+    background-color:dimgray;
+    border-radius: 10px;
+    border: thick solid white;
+    margin: auto;
+    cursor: pointer;
+    background-position: center;
+}
+
+.card {
+    background-image: url("assets/images/card back/cardback.png");
 }

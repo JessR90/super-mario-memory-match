@@ -1,8 +1,6 @@
 console.log("Super Mario Match Game");
 
 
-// Button feature
-// const playAgainBtn = document.getElementById("play-again")
 // document.querySelector("").addEventListener('click', handleClick)
 
 //Confetti 
@@ -25,9 +23,10 @@ const gameWon = new Audio("assets/audio/gamewon.mp3")
 
 
 /*---------------------------- Variables (state) ----------------------------*/
-// let cardPlay, win, loss
-// let cardsLeft = []
-// let turn = 1;
+let table, win, loss, card1Idx, card2Idx
+let cardsLeft = []
+let turn = 1;
+let deck = ["flower", "flower", "flower", "flower", "star", "star", "star", "star", "mushroom", "mushroom", "mushroom", "mushroom", "chest", "chest", "tencoin", "tencoin", "twentycoin", "twentycoin"]
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -43,7 +42,7 @@ const gameWon = new Audio("assets/audio/gamewon.mp3")
 // init()
 
 // function init() {
-//     cardPlay = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+//     deck = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 //     match = "yay"
 //     miss = "nay"
 //     render()
