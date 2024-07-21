@@ -1,5 +1,6 @@
-/* #chest {
-  background-image: url("../assets/images/front/chest.png"); 
+#chest {
+  background-image: url("../assets/images/front/chest.png");
+  
 }
 
 #tencoin {
@@ -20,18 +21,18 @@
 
 #star {
     background-image: url("../assets/images/front/star.png");
-} */
+} 
 
 #flower, #star, #mushroom, #chest, #tencoin, #twentycoin {
     width: 100px;
     height: 150px;
     border-radius: 10px;
-    border: thick solid white;
-    margin: auto;
     cursor: pointer;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.card {
-    background-image: url("../assets/images/back/cardback.png");
-}
+/* .card {
+    background-image: url("../assets/images/back/back.png");
+    border: 8px solid white;
+}  */
