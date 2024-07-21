@@ -23,18 +23,25 @@ const gameWon = new Audio("assets/audio/gamewon.mp3")
 
 
 /*---------------------------- Variables (state) ----------------------------*/
-let table, win, loss, card1Idx, card2Idx
+let table, win, loss, card1Idx, card2Idx, easy, classic, hard
 let cardsLeft = []
 let turn = 1;
 let deck = ["flower", "flower", "flower", "flower", "star", "star", "star", "star", "mushroom", "mushroom", "mushroom", "mushroom", "chest", "chest", "tencoin", "tencoin", "twentycoin", "twentycoin"]
 
 
 /*------------------------ Cached Element References ------------------------*/
-// const resetButton = document.getElementById("reset")
-// // console.log(reset);
+const easyButton = document.getElementById("easy")
+console.log(easyButton);
+
+const classicButton = document.getElementById("classic")
+console.log(classicButton);
+
+const hardButton = document.getElementById("hard")
+console.log(hardButton);
+
 
 // const cards = document.querySelectorAll(".cards")
-// // console.log(cards);
+// console.log(cards);
 
 
 
@@ -55,9 +62,9 @@ let deck = ["flower", "flower", "flower", "flower", "star", "star", "star", "sta
 // function updateCardPlay() {
 //     cardPlay.forEach((selection, idx) => {
 //         if (selection === "match") {
-//         //  
+        //  
 //         }else (selection === "miss")
-//         // 
+        // 
 //     });
 // }
 
@@ -65,7 +72,9 @@ let deck = ["flower", "flower", "flower", "flower", "star", "star", "star", "sta
 
 
 /*----------------------------- Event Listeners -----------------------------*/
-// resetButton.addEventListener("click", resetGame)
+// easyButton.addEventListener("click", easyGame)
+// classicButton.addEventListener("click", classicGame)
+// hardButton.addEventListener("click", hardGame)
 
 // cards.forEach((cardSelect) => {
 //     cardSelect.addEventListener("click", handleClick)  
