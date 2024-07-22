@@ -1,40 +1,48 @@
-#chest {
+#c12, #c13 {
   background-image: url("../assets/images/front/chest.png");
   
 }
 
-#tencoin {
+#c14, #c15 {
     background-image: url("../assets/images/front/tencoin.png"); 
 }
 
-#twentycoin {
+#c16, #c17 {
     background-image: url("../assets/images/front/twentycoin.png");
 }
 
-#flower {
+#c0, #c1, #c2, #c3 {
     background-image: url("../assets/images/front/flower.png");
 }
 
-#mushroom {
+#c4, #c5, #c6, #c7 {
     background-image: url("../assets/images/front/mushroom.png");
 }
 
-#star {
+#c8, #c9, #c10, #c11 {
     background-image: url("../assets/images/front/star.png");
 } 
 
-#flower, #star, #mushroom, #chest, #tencoin, #twentycoin {
+.facedown {
     width: 100px;
     height: 150px;
-    border-radius: 10px;
     cursor: pointer;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 90px 140px;
     margin-left: 20px;
     margin-right: 20px;
+    border: 0px solid rgba(52, 0, 121, 0.971);
+    border-width: 10px;
 }
-/* .card {
+.facedown:hover {
+    border: ridge red;
+    border-radius: 10px;
+    border-width: 10px;
+}
+
+
+/* .facedown {
     background-image: url("../assets/images/back/back.png");
     border: 8px solid white;
 }  */

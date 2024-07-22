@@ -11,7 +11,7 @@ body {
   justify-content: center;
   font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 20px;
-  background-color: rgba(52, 0, 121, 0.971);
+  background-color: rgba(48, 0, 112, 0.971);
   color: white;
   border-style:ridge;
   margin-bottom: 10px;
@@ -33,7 +33,7 @@ header {
   font-weight:bold;
   font-style:italic;
   font-variant:small-caps; 
-  background-color: rgba(52, 0, 121, 0.971);
+  background-color: rgba(48, 0, 112, 0.971);
   color: white;
   border-radius: 5px;
   border: 10px solid black;
@@ -48,7 +48,7 @@ header {
 }
 
 .table {
-  background-color: rgba(52, 0, 121, 0.971);
+  background-color: rgba(48, 0, 112, 0.971);
   border: 20px;
   border-style: solid;
   border-color: black;
@@ -63,6 +63,20 @@ header {
   padding-left: 40px;
   padding-right: 40px;
   margin: auto;
+  min-width: 1000px;
 }
 
+p {
+  margin: auto;
+  padding: 10px;
+  font-weight: bold;
+  border: 10px solid black;
+  justify-content: center;
+  font-family: "assets/font/super mario font.woff", sans-serif;
+  font-size: 20px;
+  background-color: rgba(48, 0, 112, 0.971);
+  color: white;
+  border-style:ridge;
+  margin-bottom: 10px;
+}
 
