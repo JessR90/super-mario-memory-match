@@ -3,17 +3,11 @@ body {
   background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px);
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-}
-
 #reset, #easy, #classic, #hard {
   margin: auto;
   padding: 10px;
   font-weight: bold;
   border: 10px solid black;
-  display: flex;
   justify-content: center;
   font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 20px;
@@ -24,7 +18,12 @@ nav {
   cursor: pointer;
 } 
 
-span {
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header {
   font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 55px;
   display: flex;
@@ -55,10 +54,15 @@ span {
   border-color: black;
   border-style: ridge;
   display: grid;
-  justify-items:center;
   grid-template-columns:repeat(6, 1fr);
   grid-template-rows:repeat(3);
   grid-row-gap: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  max-width: min-content;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: auto;
 }
+
+

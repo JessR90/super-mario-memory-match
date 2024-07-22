@@ -31,6 +31,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 /* .card {
     background-image: url("../assets/images/back/back.png");
