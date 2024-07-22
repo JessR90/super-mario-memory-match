@@ -3,23 +3,6 @@ body {
   background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px);
 }
 
-#reset {
-  margin: auto;
-  padding: 10px;
-  font-weight: bold;
-  border: 10px solid black;
-  justify-content: center;
-  font-family: "assets/font/super mario font.woff", sans-serif;
-  font-size: 20px;
-  background-color: rgba(48, 0, 112, 0.971);
-  color: white;
-  border-style:ridge;
-  margin-bottom: 10px;
-  cursor: pointer;
-  min-width:max-content;
-  max-width: fit-content;
-} 
-
 header {
   font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 55px;
@@ -143,7 +126,70 @@ margin-left: 50px;
 margin-top: 50px;
 }
 
-title {
+.difficultymsg {
+  font-family: "assets/font/super mario font.woff", sans-serif;
+  font-size: 35px;
+  font-weight:bold;
+  font-variant:small-caps; 
+  background-color: rgba(48, 0, 112, 0.971);
+  color: white;
+  border-radius: 5px;
+  border: 10px solid black;
+  border-style:ridge;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  min-width:max-content;
+  min-height:max-content;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  position: fixed;
+  margin-bottom: 200px;
+}
+
+/* .reset {
+  margin: auto;
+  padding: 10px;
+  font-weight: bold;
+  border: 10px solid black;
+  justify-content: center;
+  font-family: "assets/font/super mario font.woff", sans-serif;
+  font-size: 20px;
+  background-color: rgba(48, 0, 112, 0.971);
+  color: white;
+  border-style:ridge;
+  margin-bottom: 10px;
+  cursor: pointer;
+  min-width:max-content;
+  max-width: fit-content;
+}  */
+
+/* .winmsg {
+  font-family: "assets/font/super mario font.woff", sans-serif;
+  font-size: 35px;
+  font-weight:bold;
+  font-variant:small-caps; 
+  background-color: rgba(48, 0, 112, 0.971);
+  color: white;
+  border-radius: 5px;
+  border: 10px solid black;
+  border-style:ridge;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  min-width:max-content;
+  min-height:max-content;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  position: fixed;
+  margin-bottom: 200px;
+} */
+
+.lossmsg {
   font-family: "assets/font/super mario font.woff", sans-serif;
   font-size: 35px;
   font-weight:bold;

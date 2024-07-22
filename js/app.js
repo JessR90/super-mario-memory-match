@@ -13,7 +13,7 @@ const gameWon = new Audio("assets/audio/gamewon.mp3")
 /*---------------------------- Variables (state) ----------------------------*/
 let table
 let cardChoice
-let deck = ["flower", "flower", "flower", "flower", "star", "star", "star", "star", "mushroom", "mushroom", "mushroom", "mushroom", "chest", "chest", "tencoin", "tencoin", "twentycoin", "twentycoin"]
+let deck = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 let win
 let loss
 let card1
@@ -22,16 +22,13 @@ let dificultyMsg
 let playAgainMsg
 
 /*------------------------ Cached Element References ------------------------*/
-const easyButton = document.getElementById("easy")
+const easyButton = document.getElementsByClassName(".easy")
 console.log(easyButton);
-
-const classicButton = document.getElementById("classic")
+const classicButton = document.getElementsByClassName(".classic")
 console.log(classicButton);
-
-const hardButton = document.getElementById("hard")
+const hardButton = document.getElementsByClassName(".hard")
 console.log(hardButton);
-
-const resetButton = document.getElementById("reset")
+const resetButton = document.getElementsByClassName(".reset")
 console.log(resetButton);
 
 /*-------------------------------- Functions --------------------------------*/
@@ -39,21 +36,21 @@ const play = (event) => {
     console.log(event.target);
 }
 
-/*----------------------------- Event Listeners -----------------------------*/
-document.querySelector(".easy").addEventListener("click", play)
-document.querySelector(".classic").addEventListener("click", play)
-document.querySelector(".hard").addEventListener("click", play)
-
-document.querySelector("#reset").addEventListener("click", play)
-
-
-
-
 var loader = document.querySelector(".startGame")
-
 window.addEventListener("click", vanish);
 
 function vanish() {
   loader.classList.add("disppear");
 }
+
+
+/*----------------------------- Event Listeners -----------------------------*/
+document.querySelector(".easy").addEventListener("click", play)
+document.querySelector(".classic").addEventListener("click", play)
+document.querySelector(".hard").addEventListener("click", play)
+document.querySelector(".reset").addEventListener("click", play)
+
+
+
+
 
