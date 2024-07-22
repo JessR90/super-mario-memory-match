@@ -13,7 +13,7 @@ const gameWon = new Audio("assets/audio/gamewon.mp3")
 /*---------------------------- Variables (state) ----------------------------*/
 let table
 let cardChoice
-let deck = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+let deck = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
 let win
 let loss
 let card1
@@ -42,6 +42,25 @@ window.addEventListener("click", vanish);
 function vanish() {
   loader.classList.add("disppear");
 }
+
+deck = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
+
+for(let i = 0; i < deck.length; i++) {
+    let temp = deck[i];
+    let r = math.floor(math.random() * deck.length);
+    deck[i] = deck[r]
+    deck[r] = temp;
+}
+console.log(deck);
+
+
+
+
+
+
+
+
+
 
 
 /*----------------------------- Event Listeners -----------------------------*/
