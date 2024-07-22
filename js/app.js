@@ -40,8 +40,20 @@ const play = (event) => {
 }
 
 /*----------------------------- Event Listeners -----------------------------*/
-document.querySelector("#easy").addEventListener("click", play)
-document.querySelector("#classic").addEventListener("click", play)
-document.querySelector("#hard").addEventListener("click", play)
+document.querySelector(".easy").addEventListener("click", play)
+document.querySelector(".classic").addEventListener("click", play)
+document.querySelector(".hard").addEventListener("click", play)
 
 document.querySelector("#reset").addEventListener("click", play)
+
+
+
+
+var loader = document.querySelector(".startGame")
+
+window.addEventListener("click", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
+
