@@ -10,16 +10,20 @@ const chestMatch = new Audio("assets/audio/chestmatch.mp3")
 const gameOver = new Audio("assets/audio/gameover.mp3")
 const gameWon = new Audio("assets/audio/gamewon.mp3")
 
+const deck = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "mushroom", "mushroom", "star", "star", "star", "star", "tencoin", "tencoin", "twentycoin", "twentycoin", "chest", "chest"]
+
 /*---------------------------- Variables (state) ----------------------------*/
 // let table
 // let cardChoice
-// let deck = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
 // let win
 // let loss
 // let card1
 // let card2
 // let dificultyMsg
 // let playAgainMsg
+let currentDeck
+
+
 
 /*------------------------ Cached Element References ------------------------*/
 const easyButton = document.getElementsByClassName(".easy")
@@ -32,32 +36,30 @@ console.log(hardButton);
 // console.log(resetButton);
 
 /*-------------------------------- Functions --------------------------------*/
-// const play = (event) => {
-//     console.log(event.target);
-// }
+function init() {
+    currentDeck = shuffle(deck)
+    console.log(currentDeck);
+}
 
 var loader = document.querySelector(".loader")
-document.querySelector(".easy").addEventListener("click", vanish)
-document.querySelector(".classic").addEventListener("click", vanish)
-document.querySelector(".hard").addEventListener("click", vanish)
 
 function vanish() {
     loader.classList.add("disppear");
   }
 
-// deck = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
+function shuffle(array) {
+    let oldElement;
+    for (let i = array.length - 1; i > 0; i--) {
+      let rand = Math.floor(Math.random() * (i + 1));
+      oldElement = array[i];
+      array[i] = array[rand];
+      array[rand] = oldElement;
+    }
+    return array;
+  } 
+init()
 
-// function shuffle(deck) {
-//     for ( let i = deck.length - 1; 1 > 0; i--) {
-//         let j = math.floor(math.random() * (i + 1))
-//         [deck[i], deck[j]] = [deck[j], deck[i]]
-//     }
-//     return deck
-// }
 
-// let shuffleCards() {
-//     shuffleCards = shuffle(matchCards)
-// }
 
 
 
@@ -75,6 +77,10 @@ function vanish() {
 /*----------------------------- Event Listeners -----------------------------*/
 
 // document.querySelector(".reset").addEventListener("click", play)
+
+document.querySelector(".easy").addEventListener("click", vanish)
+document.querySelector(".classic").addEventListener("click", vanish)
+document.querySelector(".hard").addEventListener("click", vanish)
 
 
 
