@@ -10,18 +10,16 @@ const chestMatch = new Audio("assets/audio/chestmatch.mp3")
 const gameOver = new Audio("assets/audio/gameover.mp3")
 const gameWon = new Audio("assets/audio/gamewon.mp3")
 
-const deck = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "mushroom", "mushroom", "star", "star", "star", "star", "tencoin", "tencoin", "twentycoin", "twentycoin", "chest", "chest"]
+const board = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "mushroom", "mushroom", "star", "star", "star", "star", "tencoin", "tencoin", "twentycoin", "twentycoin", "chest", "chest"]
 
 /*---------------------------- Variables (state) ----------------------------*/
-// let table
 // let cardChoice
 // let win
 // let loss
-// let card1
-// let card2
-// let dificultyMsg
 // let playAgainMsg
 let currentDeck
+let match
+let miss
 
 
 
@@ -35,17 +33,13 @@ console.log(hardButton);
 // const resetButton = document.getElementsByClassName(".reset")
 // console.log(resetButton);
 
+const cardEls = document.querySelectorAll(".facedown")
+
 /*-------------------------------- Functions --------------------------------*/
 function init() {
-    currentDeck = shuffle(deck)
+    currentDeck = shuffle(board)
     console.log(currentDeck);
 }
-
-var loader = document.querySelector(".loader")
-
-function vanish() {
-    loader.classList.add("disppear");
-  }
 
 function shuffle(array) {
     let oldElement;
@@ -57,8 +51,39 @@ function shuffle(array) {
     }
     return array;
   } 
+ 
 init()
 
+// function render()
+//     updateBoard()
+// )
+
+// function updateBoard() {
+//     board.forEach((card, idx) => {
+//         if (card === ".facedown") {
+//             faceDown[idx].textContent = ""
+//         }else if (card === "") {
+//             faceDown[idx].textContent = ""
+//         }
+//     })
+// }
+
+function handleClick(evt) {
+       const cardIdx = parseInt(evt.target.id)
+       console.log(cardIdx);
+       revealCard(cardIdx)
+    //     if (currentDeck[cardIdx] === "" || currentDeck[cardIdx] === "") {
+    //         console.log("match");
+    //     }else if (currentDeck[cardIdx] !== "" || currentDeck[cardIdx] !== ""){
+    //         console.log("miss");
+    // }
+}
+
+function revealCard(idx) {
+    cardEls[idx].classList.remove("facedown")
+    cardEls[idx].classList.add(currentDeck[idx])
+    cardEls[idx].classList.add("faceup")
+}
 
 
 
@@ -74,13 +99,22 @@ init()
 
 
 
+var loader = document.querySelector(".loader")
+
+function vanish() {
+    loader.classList.add("disppear");
+  }
 /*----------------------------- Event Listeners -----------------------------*/
-
 // document.querySelector(".reset").addEventListener("click", play)
 
 document.querySelector(".easy").addEventListener("click", vanish)
 document.querySelector(".classic").addEventListener("click", vanish)
 document.querySelector(".hard").addEventListener("click", vanish)
+
+cardEls.forEach((downCard) => {
+    downCard.addEventListener("click", handleClick)
+})
+
 
 
 
