@@ -36,7 +36,7 @@
     background-size: 90px 140px;
 }
 
-.faceup:hover {
+.faceup:hover, .facedown:hover {
     border: ridge red;
     border-radius: 10px;
     border-width: 10px;
@@ -45,5 +45,6 @@
 .facedown {
     background-image: url("../assets/images/back/back.png");
     border: 8px solid white;
+    background-size: 100px 150px;
 }
 
