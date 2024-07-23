@@ -23,7 +23,7 @@
     background-image: url("../assets/images/front/star.png");
 } 
 
-.facedown {
+.faceup {
     width: 100px;
     height: 150px;
     cursor: pointer;
@@ -35,7 +35,7 @@
     border: 0px solid rgba(52, 0, 121, 0.971);
     border-width: 10px;
 }
-.facedown:hover {
+.faceup:hover {
     border: ridge red;
     border-radius: 10px;
     border-width: 10px;

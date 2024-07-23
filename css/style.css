@@ -73,7 +73,12 @@ p {
   margin-right: auto;
 }
 
-.startGame{
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -108,24 +113,23 @@ p {
 .hard {
   background-color: red;
   color: black;
-}
+} 
 
 .easy, .classic, .hard {
-/* margin: auto; */
-padding: 10px;
-font-weight: bold;
-border: 10px solid black;
-justify-content: center;
-font-family: "assets/font/super mario font.woff", sans-serif;
-font-size: 25px;
-border-style:ridge;
-cursor: pointer;
-min-width:max-content;
-height: 80px;
-margin-right: 50px;
-margin-left: 50px;
-margin-top: 50px;
-}
+  padding: 10px;
+  font-weight: bold;
+  border: 10px solid black;
+  justify-content: center;
+  font-family: "assets/font/super mario font.woff", sans-serif;
+  font-size: 25px;
+  border-style:ridge;
+  cursor: pointer;
+  min-width:max-content;
+  height: 80px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+} 
 
 .difficultymsg {
   font-family: "assets/font/super mario font.woff", sans-serif;
@@ -148,7 +152,7 @@ margin-top: 50px;
   margin:auto;
   position: fixed;
   margin-bottom: 200px;
-}
+} 
 
 /* .reset {
   margin: auto;
