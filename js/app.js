@@ -20,6 +20,9 @@ const board = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "
 let currentDeck
 let match
 let miss
+let firstCardPicked
+let secondCardPicked
+
 
 
 
@@ -30,8 +33,8 @@ const classicButton = document.getElementsByClassName(".classic")
 console.log(classicButton);
 const hardButton = document.getElementsByClassName(".hard")
 console.log(hardButton);
-// const resetButton = document.getElementsByClassName(".reset")
-// console.log(resetButton);
+const resetButton = document.getElementsByClassName(".reset")
+console.log(resetButton);
 
 const cardEls = document.querySelectorAll(".facedown")
 
@@ -72,11 +75,11 @@ function handleClick(evt) {
        const cardIdx = parseInt(evt.target.id)
        console.log(cardIdx);
        revealCard(cardIdx)
-    //     if (currentDeck[cardIdx] === "" || currentDeck[cardIdx] === "") {
-    //         console.log("match");
-    //     }else if (currentDeck[cardIdx] !== "" || currentDeck[cardIdx] !== ""){
-    //         console.log("miss");
-    // }
+        if (currentDeck[cardIdx] === "" || currentDeck[cardIdx] === "") {
+            console.log("match");
+        }else if (currentDeck[cardIdx] !== "" || currentDeck[cardIdx] !== ""){
+            console.log("miss");
+    }
 }
 
 function revealCard(idx) {
@@ -84,17 +87,6 @@ function revealCard(idx) {
     cardEls[idx].classList.add(currentDeck[idx])
     cardEls[idx].classList.add("faceup")
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -120,3 +112,10 @@ cardEls.forEach((downCard) => {
 
 
 
+// Create function to check to see if cardPicked vars are truthy or falsy 
+// Use cardPicked vars function to return if both are truthy 
+// Use cardPicked vars to assign the cardPicked values ex: "chest", "star","tencoin", "star"
+// Create function to check for match
+// If match clear CardPicked variable values and tic-tac toe logic not clicked again after match
+// return once all cards are clicked 
+// Rock paper scissors for comparison 
