@@ -8,6 +8,8 @@ The goal is simple: flip over two of the same card until you finish the board! I
 
 # [Play Now!](https://jessr90.github.io/super-mario-memory-match/)
 
+### [Planning Materials](https://docs.google.com/document/d/1KOYUC8L31TqlbbbxBtTCDOSJqEPTgMd1sfMewNFiQv8/edit)
+
 ## Motivation:
 
 Super Mario Memory Match is my take on the classic version from the video game *Super Mario Brothers 3*. *Super Mario Brothers 3* was my favorite in *Super Mario All Stars* on Super Nintendo. It’s my favorite game of all time, and I’ve been playing it since I was five years old.
