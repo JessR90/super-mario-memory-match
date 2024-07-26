@@ -1,5 +1,6 @@
 body {
-  padding: 80px;
+  padding: 0;
+  margin: auto;
   background: repeating-linear-gradient(-55deg, #f2eef5 1px, #e68a96 10px, #f2eef5 10px, #a0b9d8 20px);
   /* background: repeating-linear-gradient(-55deg, #f1f1f5 1px, #da2b4d 10px, #f1f1f5 10px, #6088be 20px); */
 }
@@ -20,29 +21,23 @@ header {
   align-items: center;
   text-align: center;
   padding: 20px;
-  min-width: 100%;
+  max-width: fit-content;
   margin: auto;
-  margin-bottom: 20px;
-  margin-top: -50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .board {
   background-color: rgba(48, 0, 112, 0.971);
-  border: 20px;
-  border-style: solid;
-  border-color: black;
+  border: 10px solid black;
   border-style: ridge;
-  display: grid;
   grid-template-columns:repeat(6, 1fr);
-  grid-template-rows:repeat(3);
-  grid-row-gap: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  max-width: min-content;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin: auto;
-  min-width: 1100px;
+  grid-template-rows:repeat(3, auto);
+  display: grid;
+  gap: 30px;
+  padding: 25px;
+  margin:auto;
+  max-width: max-content;
 }
 
 * {
