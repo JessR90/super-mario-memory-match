@@ -24,14 +24,14 @@
 } 
 
 .faceup, .facedown {
-    width: 100px;
-    height: 150px;
+    width: 80px;
+    height: 130px;
     cursor: pointer;
     background-position: center;
     background-repeat: no-repeat;
     border: solid rgba(52, 0, 121, 0.971);
     border-width: 10px;
-    background-size: 90px 140px;
+    background-size: 70px 120px;
 }
 
 .faceup:hover, .facedown:hover {
@@ -43,6 +43,6 @@
 .facedown {
     background-image: url("../assets/images/back/back.png");
     border: 8px solid white;
-    background-size: 100px 150px;
+    background-size: 80px 130px;
 }
 
