@@ -94,7 +94,7 @@ function revealCard(idx) {
 var loader = document.querySelector(".loader")
 
 function vanish() {
-    loader.classList.add("disppear");
+    loader.classList.add("disappear");
   }
 /*----------------------------- Event Listeners -----------------------------*/
 // document.querySelector(".reset").addEventListener("click", play)
