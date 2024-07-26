@@ -1,6 +1,5 @@
 body {
   padding: 0;
-  position: relative;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -45,7 +44,6 @@ header {
   max-width: fit-content;
   min-width: 850px;
   row-gap: 10px;
-  position: relative;
 }
 
 * {
