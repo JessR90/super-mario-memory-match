@@ -25,13 +25,13 @@
 
 .faceup, .facedown {
     width: 65px;
-    height: 115px;
+    height: 100px;
     cursor: pointer;
     background-position: center;
     background-repeat: no-repeat;
     border: solid rgba(52, 0, 121, 0.971);
     border-width: 8px;
-    background-size: 55px 105px;
+    background-size: 55px 90px;
 }
 
 .faceup:hover, .facedown:hover {
