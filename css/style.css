@@ -1,5 +1,6 @@
 body {
   padding: 0;
+  position: relative;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -35,15 +36,16 @@ header {
   border: 10px solid black;
   border-style: ridge;
   grid-template-columns:repeat(6, 1fr);
-  grid-template-rows:repeat(3);
+  grid-template-rows:repeat(3, auto);
   display: grid;
-  gap: 30px;
   padding: 25px;
   margin:auto;
   justify-content: center;
   align-items: center;
   max-width: fit-content;
   min-width: 850px;
+  row-gap: 10px;
+  position: relative;
 }
 
 * {
