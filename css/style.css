@@ -25,9 +25,9 @@ header {
   padding: 10px;
   margin: auto;
   margin-top: 0;
-  margin-bottom: -5px;
-  min-width: 530px;
-  width: 530px;
+  margin-bottom: -20px;
+  min-width: 725px;
+  width: 725px;
 }
 
 .board {
@@ -40,8 +40,8 @@ header {
   margin:auto;
   justify-content: center;
   align-items: center;
-  max-width: 540px;
-  min-width: 540px;
+  max-width: 735px;
+  min-width: 735px;
   row-gap: 2px;
   border-top: none;
   padding-left: 10px;
