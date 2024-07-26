@@ -9,7 +9,7 @@ body {
 
 header {
   font-family: "assets/font/super mario font.woff", sans-serif;
-  font-size: 7vh;
+  font-size: 5vh;
   font-weight: bold;
   font-style: italic;
   font-variant: small-caps;
@@ -27,7 +27,7 @@ header {
   margin-top: 10px;
   margin-bottom: -10px;
   min-width: 600px;
-  max-width: fit-content;
+  width: 645px;
 }
 
 .board {
@@ -41,12 +41,13 @@ header {
   justify-content: center;
   align-items: center;
   max-width: fit-content;
-  min-width: 700px;
+  min-width: 650px;
   row-gap: 10px;
   border-top: none;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-left: 15px;
   padding-top: 10px;
+  padding-bottom: 15px;
+  height: 450px;
 }
 
 * {

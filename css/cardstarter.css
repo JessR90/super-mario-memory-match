@@ -24,25 +24,25 @@
 } 
 
 .faceup, .facedown {
-    width: 80px;
-    height: 130px;
+    width: 75px;
+    height: 125px;
     cursor: pointer;
     background-position: center;
     background-repeat: no-repeat;
     border: solid rgba(52, 0, 121, 0.971);
-    border-width: 10px;
-    background-size: 70px 120px;
+    border-width: 8px;
+    background-size: 65px 115px;
 }
 
 .faceup:hover, .facedown:hover {
     border: ridge red;
-    border-radius: 10px;
+    border-radius: 8px;
     border-width: 8px;
 }
 
 .facedown {
     background-image: url("../assets/images/back/back.png");
     border: 8px solid white;
-    background-size: 80px 130px;
+    background-size: 75px 125px;
 }
 
