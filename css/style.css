@@ -9,7 +9,7 @@ body {
 
 header {
   font-family: "assets/font/super mario font.woff", sans-serif;
-  font-size: 8vh;
+  font-size: 6vh;
   font-weight: bold;
   font-style: italic;
   font-variant: small-caps;
@@ -22,10 +22,10 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 2px;
+  margin-bottom: -2px;
   min-width: 840px;
   max-width: fit-content;
 }
@@ -37,15 +37,16 @@ header {
   grid-template-columns:repeat(6, 1fr);
   grid-template-rows:repeat(3, auto);
   display: grid;
-  padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin:auto;
   justify-content: center;
   align-items: center;
   max-width: fit-content;
-  min-width: 854px;
+  min-width: 840px;
   row-gap: 10px;
+  border-top: none;
 }
 
 * {
