@@ -107,7 +107,7 @@ p {
   border: 10px solid black;
   justify-content: center;
   font-family: "assets/font/super mario font.woff", sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
   border-style:ridge;
   cursor: pointer;
   background-color: rgb(1, 162, 1);
@@ -124,7 +124,7 @@ p {
   border: 10px solid black;
   justify-content: center;
   font-family: "assets/font/super mario font.woff", sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
   border-style:ridge;
   cursor: pointer;
   background-color: rgb(1, 1, 226);
@@ -141,7 +141,7 @@ p {
   border: 10px solid black;
   justify-content: center;
   font-family: "assets/font/super mario font.woff", sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
   border-style:ridge;
   cursor: pointer;
   background-color: rgb(220, 0, 0);
@@ -154,7 +154,7 @@ p {
 
 .playins {
   font-family: "assets/font/super mario font.woff", sans-serif;
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight:bold;
   font-variant:small-caps; 
   background-color: rgba(48, 0, 112, 0.971);
