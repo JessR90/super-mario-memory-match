@@ -77,23 +77,6 @@ body {
     }
   }
   
-  .easy {
-    padding: 10px;
-    font-weight: bold;
-    border: 10px solid black;
-    justify-content: center;
-    font-family: "assets/font/super mario font.woff", sans-serif;
-    font-size: 3vw;
-    border-style:ridge;
-    cursor: pointer;
-    background-color: rgb(1, 162, 1);
-    color: white;
-    text-align: center;
-    min-width: 150px;
-    margin: 5px;
-    margin-bottom: 10px;
-  }
-  
   .classic {
     padding: 10px;
     font-weight: bold;
@@ -108,23 +91,6 @@ body {
     margin: 10px;
     min-width: 150px;
     text-align: center;
-    margin-top: 10px;
-  } 
-  
-  .hard {
-    padding: 10px;
-    font-weight: bold;
-    border: 10px solid black;
-    justify-content: center;
-    font-family: "assets/font/super mario font.woff", sans-serif;
-    font-size: 3vw;
-    border-style:ridge;
-    cursor: pointer;
-    background-color: rgb(220, 0, 0);
-    color: white;
-    text-align: center;
-    min-width: 150px;
-    margin-bottom: 10px;
     margin-top: 10px;
   } 
   

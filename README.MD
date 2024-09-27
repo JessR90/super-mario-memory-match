@@ -33,25 +33,6 @@ Super Mario Memory Match is my take on the classic version from the video game *
 * Color Match Background
     * [Image Color Picker](https://imagecolorpicker.com/)
 
-### Audio:
-
-* Converted audio file MP4 to MP3:
-
-    * [CloudConvert](https://cloudconvert.com/mp3-converter)
-
-* If won - “Course Clear Fanfare, #2"
-* If lost - “Game Over, #16"
-* Card match - “Bonus game: Match”
-* Card miss - “Bonus Game: No match” 
-
-    * [Khinsider](https://downloads.khinsider.com/game-soundtracks/album/happy-mario-20th-super-mario-sound-collection)
-* Chest match * Card Select - “1-Up”
-
-    * [The Mushroom Kingdom](https://themushroomkingdom.net/media/smb3/wav)
-* Background music - “N Spade, #17"
-
-    * [Khinsider](https://downloads.khinsider.com/game-soundtracks/album/super-mario-bros.-3-1988-nes)
-
 ### Reference:
 
 * The actual game being played:     
