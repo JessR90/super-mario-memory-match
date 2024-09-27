@@ -5,10 +5,10 @@ console.log("Super Mario Match Game");
 const board = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "mushroom", "mushroom", "star", "star", "star", "star", "tencoin", "tencoin", "twentycoin", "twentycoin", "chest", "chest"]
 
 /*---------------------------- Variables (state) ----------------------------*/
-// let cardChoice
-// let win
-// let loss
-// let playAgainMsg
+let cardChoice
+let win
+let loss
+let playAgainMsg
 let currentDeck
 let match
 let miss
