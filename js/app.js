@@ -14,8 +14,6 @@ let isFlipping = false
 const classicButton = document.getElementsByClassName("classic")
 console.log(classicButton);
 
-const resetButton = document.getElementsByClassName("reset")
-
 const cardEls = document.querySelectorAll(".facedown")
 
 /*-------------------------------- Functions --------------------------------*/
@@ -32,6 +30,7 @@ function shuffle(array) {
       let rand = Math.floor(Math.random() * (i + 1))
       oldElement = array[i]
       array[i] = array[rand]
+      array[rand] = oldElement
   }
   return array
 }
@@ -40,6 +39,8 @@ function handleClick(evt) {
   if (isFlipping) 
     return  
   const cardIdx = parseInt(evt.target.id)
+  console.log(cardIdx);
+  
   if (cardEls[cardIdx].classList.contains("revealed")) 
     return 
   revealCard(cardIdx)
@@ -49,10 +50,12 @@ function handleClick(evt) {
       secondCardPicked = cardIdx
       isFlipping = true 
   if (currentDeck[firstCardPicked] === currentDeck[secondCardPicked]) {
+    console.log("match");    
       cardEls[firstCardPicked].classList.add("matched")
       cardEls[secondCardPicked].classList.add("matched")
   resetPicks()
   } else {
+    console.log("miss");
   setTimeout(() => {
     hideCard(firstCardPicked)
     hideCard(secondCardPicked)

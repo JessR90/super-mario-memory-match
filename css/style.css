@@ -112,7 +112,7 @@ body {
     margin-top: 0px;
   }
   
-  .reset {
+  /* .reset {
     margin-left: 10px;
     margin-top: -15px;
     padding: 10px;
@@ -128,25 +128,8 @@ body {
     cursor: pointer;
     min-width:max-content;
     max-width: fit-content;
-  } 
+  }  */
 
-  .timer {
-    margin-left: 10px;
-    margin-top: -15px;
-    padding: 10px;
-    font-weight: bold;
-    border: 10px solid black;
-    justify-content: center;
-    font-family: "assets/font/super mario font.woff", sans-serif;
-    font-size: 20px;
-    background-color: rgba(48, 0, 112, 0.971);
-    color: white;
-    border-style:ridge;
-    margin-bottom: 10px;
-    cursor: pointer;
-    min-width:max-content;
-    max-width: fit-content;
-  } 
   
  /*  .winmsg {
     font-family: "assets/font/super mario font.woff", sans-serif;
