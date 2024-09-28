@@ -84,9 +84,6 @@ function vanish() {
   loader.classList.add("disappear")
 }
 
-// document.querySelector(".lossmsg").innerHTML = YOU LOST!!! 😢
-
-
 /*----------------------------- Event Listeners -----------------------------*/
 document.querySelector(".classic").addEventListener("click", vanish)
 
