@@ -32,7 +32,6 @@ function shuffle(array) {
       let rand = Math.floor(Math.random() * (i + 1))
       oldElement = array[i]
       array[i] = array[rand]
-      array[rand] = oldElement
   }
   return array
 }
@@ -58,10 +57,11 @@ function handleClick(evt) {
     hideCard(firstCardPicked)
     hideCard(secondCardPicked)
       resetPicks()
-        }, 2000) 
+        }, 2500) 
     }
   }
 }
+
 function revealCard(idx) {
   cardEls[idx].classList.remove("facedown")
   cardEls[idx].classList.add("revealed")
