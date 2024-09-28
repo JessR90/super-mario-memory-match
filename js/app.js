@@ -11,6 +11,7 @@ let firstCardPicked = ""
 let secondCardPicked = ""
 let isFlipping = false 
 
+let timerElement 
 /*------------------------ Cached Element References ------------------------*/
 const classicButton = document.getElementsByClassName("classic")
 
@@ -84,8 +85,20 @@ function vanish() {
   loader.classList.add("disappear")
 }
 
+function startTimer() {
+  const timerInterval = setInterval(() => {
+    timerElement.textContent = `Time Remaining: ${timeRemaining} seconds`
+    if (timeRemaining <= 0) {
+      clearInterval(timerInterval)
+      document.querySelector('.lossmsg')
+      document.querySelector('.endGame') 
+    }
+  }, 1000) 
+}
+
 /*----------------------------- Event Listeners -----------------------------*/
 document.querySelector(".classic").addEventListener("click", vanish)
+startTimer()
 
 cardEls.forEach((cardEl, idx) => {
   cardEl.addEventListener("click", handleClick)
