@@ -9,18 +9,26 @@ let miss
 let firstCardPicked = ""
 let secondCardPicked = ""
 let isFlipping = false 
+let timer
+let timeLeft
 
 /*------------------------ Cached Element References ------------------------*/
 const classicButton = document.getElementsByClassName("classic")
-console.log(classicButton);
 
 const cardEls = document.querySelectorAll(".facedown")
+
+const messageEl = document.getElementsByClassName("lossmsg")[0]
+
+const timerEl = document.querySelector("timer")
 
 /*-------------------------------- Functions --------------------------------*/
 // Shuffle board and start game
 function init() {
   currentDeck = shuffle(board)
   console.log(currentDeck)
+  timeLeft = 30
+  timerEl.textContent = `Time Left: ${timeLeft}s`
+  startTime()
 }
 
 // Fisher-Yates shuffle algorithm
@@ -60,7 +68,7 @@ function handleClick(evt) {
     hideCard(firstCardPicked)
     hideCard(secondCardPicked)
       resetPicks()
-        }, 2000) 
+        }, 1000) 
     }
   }
 }
@@ -86,6 +94,20 @@ var loader = document.querySelector(".loader")
 function vanish() {
   loader.classList.add("disappear")
 }
+
+const startTime = () => {
+  timer = setInterval(() => {
+    timeLeft--;
+    timerEl.textContent = `Time Left: ${timeLeft}s`
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      messageEl.textContent = "YOU LOST!!! 😢"
+      cardEls.forEach((card) => {
+        card.classList.add("facedown")
+      });
+    }
+  }, 1000);
+};
 
 /*----------------------------- Event Listeners -----------------------------*/
 document.querySelector(".classic").addEventListener("click", vanish)
