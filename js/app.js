@@ -3,7 +3,6 @@ console.log("Super Mario Match Game");
 
 /*-------------------------------- Constants --------------------------------*/
 const board = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "mushroom", "mushroom", "star", "star", "star", "star", "tencoin", "tencoin", "twentycoin", "twentycoin", "chest", "chest"]
-
 let currentDeck
 let match
 let miss
@@ -11,9 +10,9 @@ let firstCardPicked = ""
 let secondCardPicked = ""
 let isFlipping = false 
 
-let timerElement 
 /*------------------------ Cached Element References ------------------------*/
 const classicButton = document.getElementsByClassName("classic")
+console.log(classicButton);
 
 const resetButton = document.getElementsByClassName("reset")
 
@@ -58,7 +57,7 @@ function handleClick(evt) {
     hideCard(firstCardPicked)
     hideCard(secondCardPicked)
       resetPicks()
-        }, 2500) 
+        }, 2000) 
     }
   }
 }
@@ -85,21 +84,10 @@ function vanish() {
   loader.classList.add("disappear")
 }
 
-function startTimer() {
-  const timerInterval = setInterval(() => {
-    timerElement.textContent = `Time Remaining: ${timeRemaining} seconds`
-    if (timeRemaining <= 0) {
-      clearInterval(timerInterval)
-      document.querySelector('.lossmsg')
-      document.querySelector('.endGame') 
-    }
-  }, 1000) 
-}
-
 /*----------------------------- Event Listeners -----------------------------*/
 document.querySelector(".classic").addEventListener("click", vanish)
-startTimer()
 
 cardEls.forEach((cardEl, idx) => {
   cardEl.addEventListener("click", handleClick)
 })
+init()
