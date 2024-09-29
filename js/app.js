@@ -6,15 +6,16 @@ const board = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "
 let currentDeck
 let match
 let miss
-let firstCardPicked = ""
-let secondCardPicked = ""
-let isFlipping = false 
+let firCarSel = ""
+let secCarSel = ""
+let isFlipping = true 
 let timeLeft = 30
-
+let win = 0
+let loss = 0
 /*------------------------ Cached Element References ------------------------*/
 const classicButton = document.getElementsByClassName("classic")
 const cardEls = document.querySelectorAll(".facedown")
-const resetButton = document.getElementsByClassName("reset");
+const resetButton = document.getElementsByClassName("reset")
 const playAgainBtn = document.getElementById('play-again')
 const winTotal = document.getElementById('win-count')
 const lossTotal = document.getElementById('loss-count')
@@ -37,84 +38,105 @@ function shuffle(array) {
   return array
 }
 
-// Checks if there is a miss or match, 
+// Checks if there is a miss or match
 function handleClick(evt) {
-  if (isFlipping) 
-    return  
+  if (isFlipping === false) 
+    return
   const cardIdx = parseInt(evt.target.id)
-  console.log(cardIdx);
-  
+  evt.target.classList.add(currentDeck[cardIdx])  
   if (cardEls[cardIdx].classList.contains("revealed")) 
-    return 
+    return
   revealCard(cardIdx)
-  if (firstCardPicked === "") {
-      firstCardPicked = cardIdx
+  if (firCarSel === "") {
+      firCarSel = cardIdx
   } else {
-      secondCardPicked = cardIdx
-      isFlipping = true 
+      secCarSel = cardIdx
+      isFlipping = false
+      if (currentDeck[firCarSel] === currentDeck[secCarSel]) {
+          cardEls[firCarSel].classList.add("matched")
+          cardEls[secCarSel].classList.add("matched")
+          win++
+          resetPicks()
+      } else {
+          setTimeout(() => {
+              hideCard(firCarSel)
+              hideCard(secCarSel)
+              loss++
+              resetPicks()
+          }, 1000)
+      }
   }
-  if (currentDeck[firstCardPicked] === currentDeck[secondCardPicked]) {
-    console.log("match");    
-    cardEls[firstCardPicked].classList.add("matched")
-    cardEls[secondCardPicked].classList.add("matched")
-  resetPicks()
-  } else {
-    console.log("miss");
-  setTimeout(() => {
-    hideCard(firstCardPicked)
-    hideCard(secondCardPicked)
-    resetPicks()
-      }, 1000) 
-    }
-  
 }
 
 function revealCard(idx) {
   cardEls[idx].classList.remove("facedown")
-  console.log(currentDeck);
-  
-  cardEls[idx].style.backgroundImage = `url(/assets/images/front/${currentDeck[idx]}.png)`
-  // classList.add(currentDeck[idx]) 
- 
-
-
   cardEls[idx].classList.add("revealed")
 }
 
 function hideCard(idx) {
-  cardEls[idx].classList.remove("revealed")
-  cardEls[idx].classList.add("facedown")
+  cardEls[idx].className = "facedown"
 }
 
 function resetPicks() {
-  firstCardPicked = ""
-  secondCardPicked = ""
-  isFlipping = false  
+  firCarSel = ""
+  secCarSel = ""
+  isFlipping = true  
 }
 
-// Loader
+function countdownTimer(timeLeft = 30) {
+  const intervalID = setInterval(() => {
+    timeLeft--
+    document.getElementById('countdown-timer').textContent = timeLeft
+    if (timeLeft <= 0) {
+      clearInterval(intervalID)
+      endGame()
+    }
+  }, 1000)
+}
+
+function endGame(){
+  winTotal.innerText = win
+  lossTotal.innerText = loss
+  const winLoss = document.getElementsByClassName('count-results')
+  for (let i=0; i< winLoss.length; i++){
+    winLoss[i].style.display = "block"
+  }
+  playAgainBtn.style.display = "block"
+  isFlipping = false
+}
+
+function resetGame(){
+  playAgainBtn.style.display = "none"
+  win = 0
+  loss = 0
+  winTotal.innerText = win
+  lossTotal.innerText = loss
+  console.log('win or loss in reset func' + win + loss)
+  const winLoss = document.getElementsByClassName('count-results')
+  for (let i=0; i< winLoss.length; i++){
+      winLoss[i].style.display = "none"
+  }
+  countdownTimer()
+  const revealedCards = document.getElementsByClassName('revealed')
+  const revCardsArray = Array.from(revealedCards)
+  const revCardsArrayLength = revCardsArray.length
+  for (let i=0; i<revCardsArrayLength; i++){
+      revCardsArray[i].className = 'facedown'
+  }
+  init()
+  isFlipping = true
+}
+        
+// Start page
 var loader = document.querySelector(".loader")
 function vanish() {
   loader.classList.add("disappear")
+  countdownTimer()
 }
-
-const startTime = () => {
-  timer = setInterval(() => {
-    timeLeft--;
-    timerEl.textContent = `Time Left: ${timeLeft}s`
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-      messageEl.textContent = "YOU LOST!!! 😢"
-      cardEls.forEach((card) => {
-        card.classList.add("facedown")
-      });
-    }
-  }, 1000);
-};
 
 /*----------------------------- Event Listeners -----------------------------*/
 document.querySelector(".classic").addEventListener("click", vanish)
-
+playAgainBtn.addEventListener("click", resetGame)
 cardEls.forEach((cardEl) => {
   cardEl.addEventListener("click", handleClick)
 })
