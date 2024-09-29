@@ -22,11 +22,8 @@ const lossTotal = document.getElementById('loss-count')
 // Shuffle board and start game
 function init() {
   currentDeck = shuffle(board)
-  console.log(currentDeck)
-  timeLeft = 30
-  timerEl.textContent = `Time Left: ${timeLeft}s`
-  startTime()
 }
+init()
 
 // Fisher-Yates shuffle algorithm
 function shuffle(array) {
@@ -121,4 +118,3 @@ document.querySelector(".classic").addEventListener("click", vanish)
 cardEls.forEach((cardEl) => {
   cardEl.addEventListener("click", handleClick)
 })
-init()
