@@ -1,61 +1,64 @@
 .chest {
-background-image: url("../assets/images/front/chest.png");
-background-repeat: no-repeat;
-height: 135px;
-background-size: contain;
+  background-image: url("../assets/images/front/chest.png");
+  background-repeat: no-repeat;
+  height: 135px;
+  background-size: contain;
 }
   
-  .tencoin {
-      background-image: url("../assets/images/front/tencoin.png"); 
-  }
+.tencoin {
+  background-image: url("../assets/images/front/tencoin.png");
+  background-repeat: no-repeat;
+  height: 135px;
+  background-size: contain;
+}
   
 .twentycoin {
-background-image: url("../assets/images/front/twentycoin.png");
-background-repeat: no-repeat;
-height: 135px;
-background-size: contain;
+  background-image: url("../assets/images/front/twentycoin.png");
+  background-repeat: no-repeat;
+  height: 135px;
+  background-size: contain;
 }
   
-  .flower {
-      background-image: url("../assets/images/front/flower.png");
-      background-repeat: no-repeat;
-    height: 135px;
-    background-size: contain;
-  }
+.flower {
+  background-image: url("../assets/images/front/flower.png");
+  background-repeat: no-repeat;
+  height: 135px;
+  background-size: contain;
+}
   
-  .mushroom {
-      background-image: url("../assets/images/front/mushroom.png");
-      background-repeat: no-repeat;
-    height: 135px;
-    background-size: contain;
-  }
+.mushroom {
+  background-image: url("../assets/images/front/mushroom.png");
+  background-repeat: no-repeat;
+  height: 135px;
+  background-size: contain;
+}
   
-  .star  {
-      background-image: url("../assets/images/front/star.png");
-      background-repeat: no-repeat;
-    height: 135px;
-    background-size: contain;
-  } 
+.star {
+  background-image: url("../assets/images/front/star.png");
+  background-repeat: no-repeat;
+  height: 135px;
+  background-size: contain;
+}
   
-  .faceup, .facedown {
-      width: 85px;
-      height: 120px;
-      cursor: pointer;
-      background-position: center;
-      background-repeat: no-repeat;
-      border: solid rgba(52, 0, 121, 0.971);
-      border-width: 8px;
-      background-size: 75px 110px;
-  }
+.faceup, .facedown {
+  width: 85px;
+  height: 120px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid rgba(52, 0, 121, 0.971);
+  border-width: 8px;
+  background-size: 75px 110px;
+}
   
-  .faceup:hover, .facedown:hover {
-      border: ridge red;
-      border-radius: 8px;
-      border-width: 8px;
-  }
+.faceup:hover, .facedown:hover {
+  border: ridge red;
+  border-radius: 8px;
+  border-width: 8px;
+}
   
-  .facedown {
-      background-image: url("../assets/images/back/back.png");
-      border: 8px solid white;
-      background-size: 85px 135px;
-  }
+.facedown {
+  background-image: url("../assets/images/back/back.png");
+  border: 8px solid white;
+  background-size: 85px 135px;
+}
