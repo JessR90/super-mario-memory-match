@@ -9,17 +9,12 @@ let miss
 let firstCardPicked = ""
 let secondCardPicked = ""
 let isFlipping = false 
-let timer
-let timeLeft
+let timeLeft = 30
 
 /*------------------------ Cached Element References ------------------------*/
 const classicButton = document.getElementsByClassName("classic")
-
 const cardEls = document.querySelectorAll(".facedown")
-
-const messageEl = document.getElementsByClassName("lossmsg")[0]
-
-const timerEl = document.querySelector(".timer")
+const resetButton = document.getElementsByClassName("reset");
 
 /*-------------------------------- Functions --------------------------------*/
 // Shuffle board and start game
