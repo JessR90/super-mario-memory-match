@@ -120,7 +120,7 @@ const startTime = () => {
 /*----------------------------- Event Listeners -----------------------------*/
 document.querySelector(".classic").addEventListener("click", vanish)
 
-cardEls.forEach((cardEl, idx) => {
+cardEls.forEach((cardEl) => {
   cardEl.addEventListener("click", handleClick)
 })
 init()
