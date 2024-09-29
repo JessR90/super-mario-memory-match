@@ -43,6 +43,7 @@ function shuffle(array) {
   return array
 }
 
+// Checks if there is a miss or match, 
 function handleClick(evt) {
   if (isFlipping) 
     return  
