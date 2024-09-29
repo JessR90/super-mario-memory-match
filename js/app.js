@@ -26,7 +26,7 @@ function init() {
 }
 init()
 
-// Fisher-Yates shuffle algorithm
+// Fisher-Yates shuffle algorithm - randomly shuffle array
 function shuffle(array) {
   let oldElement
   for (let i = array.length - 1; i >= 0; i--) {
@@ -38,7 +38,7 @@ function shuffle(array) {
   return array
 }
 
-// Checks if there is a miss or match
+// Checks if there is a miss or match and what happens when card is clicked
 function handleClick(evt) {
   if (isFlipping === false) 
     return
