@@ -4,7 +4,7 @@
 
 ## How to play:
 
-The goal is simple: flip over two of the same card until you finish the board! If you miss twice, you lose!
+The goal is simple: flip over two of the same card until you finish the board! Beat the timer and try to get more wins 🥳 vs losses 😢!
 
 # [Play Now!](https://jessr90.github.io/super-mario-memory-match/)
 
