@@ -67,22 +67,25 @@ function handleClick(evt) {
       }
   }
 }
-
+// Removes facedown class and adds the reveal class
 function revealCard(idx) {
   cardEls[idx].classList.remove("facedown")
   cardEls[idx].classList.add("revealed")
 }
 
+// Resets class and flips it back if there's no match
 function hideCard(idx) {
   cardEls[idx].className = "facedown"
 }
 
+// After hideCard lets user make a new guess with any facedown cards
 function resetPicks() {
   firCarSel = ""
   secCarSel = ""
   isFlipping = true  
 }
 
+//  Adds timer and decreases by 1 second starting from 30 seconds
 function countdownTimer(timeLeft = 30) {
   const intervalID = setInterval(() => {
     timeLeft--
@@ -94,6 +97,7 @@ function countdownTimer(timeLeft = 30) {
   }, 1000)
 }
 
+//  Game ends when all matches are found or timer hits 0
 function endGame(){
   winTotal.innerText = win
   lossTotal.innerText = loss
@@ -105,6 +109,7 @@ function endGame(){
   isFlipping = false
 }
 
+// Reset game state, flips cards all facedown, start timer, hides win/loss msgs and play again btn
 function resetGame(){
   playAgainBtn.style.display = "none"
   win = 0
