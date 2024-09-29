@@ -1,4 +1,4 @@
-console.log("Super Mario Match Game");
+console.log("Super Mario Match Game")
 
 
 /*-------------------------------- Constants --------------------------------*/
@@ -116,7 +116,6 @@ function resetGame(){
   loss = 0
   winTotal.innerText = win
   lossTotal.innerText = loss
-  console.log('win or loss in reset func' + win + loss)
   const winLoss = document.getElementsByClassName('count-results')
   for (let i=0; i< winLoss.length; i++){
       winLoss[i].style.display = "none"
