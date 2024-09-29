@@ -15,7 +15,9 @@ let timeLeft = 30
 const classicButton = document.getElementsByClassName("classic")
 const cardEls = document.querySelectorAll(".facedown")
 const resetButton = document.getElementsByClassName("reset");
-
+const playAgainBtn = document.getElementById('play-again')
+const winTotal = document.getElementById('win-count')
+const lossTotal = document.getElementById('loss-count')
 /*-------------------------------- Functions --------------------------------*/
 // Shuffle board and start game
 function init() {
