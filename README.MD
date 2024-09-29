@@ -54,6 +54,7 @@ Super Mario Memory Match is my take on the classic version from the video game *
 ### Support:
 
 * Ben
+* Jurgen
 * Stayvon
 * Ito
 * Faris
