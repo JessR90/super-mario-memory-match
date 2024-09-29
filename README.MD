@@ -51,14 +51,6 @@ Super Mario Memory Match is my take on the classic version from the video game *
 * Super Mario Bros 3 Font
     * [Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator)
 
-### Support:
-
-* Ben
-* Jurgen
-* Stayvon
-* Ito
-* Faris
-
 
 ## Stretch Goals:
 
