@@ -19,7 +19,7 @@ const cardEls = document.querySelectorAll(".facedown")
 
 const messageEl = document.getElementsByClassName("lossmsg")[0]
 
-const timerEl = document.querySelector("timer")
+const timerEl = document.querySelector(".timer")
 
 /*-------------------------------- Functions --------------------------------*/
 // Shuffle board and start game
@@ -57,24 +57,32 @@ function handleClick(evt) {
   } else {
       secondCardPicked = cardIdx
       isFlipping = true 
+  }
   if (currentDeck[firstCardPicked] === currentDeck[secondCardPicked]) {
     console.log("match");    
-      cardEls[firstCardPicked].classList.add("matched")
-      cardEls[secondCardPicked].classList.add("matched")
+    cardEls[firstCardPicked].classList.add("matched")
+    cardEls[secondCardPicked].classList.add("matched")
   resetPicks()
   } else {
     console.log("miss");
   setTimeout(() => {
     hideCard(firstCardPicked)
     hideCard(secondCardPicked)
-      resetPicks()
-        }, 1000) 
+    resetPicks()
+      }, 1000) 
     }
-  }
+  
 }
 
 function revealCard(idx) {
   cardEls[idx].classList.remove("facedown")
+  console.log(currentDeck);
+  
+  cardEls[idx].style.backgroundImage = `url(/assets/images/front/${currentDeck[idx]}.png)`
+  // classList.add(currentDeck[idx]) 
+ 
+
+
   cardEls[idx].classList.add("revealed")
 }
 
