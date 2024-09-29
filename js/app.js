@@ -67,6 +67,7 @@ function handleClick(evt) {
       }
   }
 }
+
 // Removes facedown class and adds the reveal class
 function revealCard(idx) {
   cardEls[idx].classList.remove("facedown")
