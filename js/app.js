@@ -6,6 +6,7 @@ const board = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "
 const backgroundMusic = new Audio("../assets/audio/backgroundmusic.mp3")
 const cardMatch = new Audio("../assets/audio/cardmatch.mp3")
 const cardMiss = new Audio("../assets/audio/cardmiss.mp3")
+const cardSelect = new Audio("../assets/audio/cardselect.mp3")
 let currentDeck
 let match
 let miss
@@ -75,6 +76,7 @@ function handleClick(evt) {
 
 // Removes facedown class and adds the reveal class
 function revealCard(idx) {
+  cardSelect.play()
   cardEls[idx].classList.remove("facedown")
   cardEls[idx].classList.add("revealed")
 }
