@@ -7,6 +7,8 @@ const backgroundMusic = new Audio("../assets/audio/backgroundmusic.mp3")
 const cardMatch = new Audio("../assets/audio/cardmatch.mp3")
 const cardMiss = new Audio("../assets/audio/cardmiss.mp3")
 const cardSelect = new Audio("../assets/audio/cardselect.mp3")
+const gameOver = new Audio("assets/audio/gameover.mp3")
+const gameWon = new Audio("assets/audio/gamewon.mp3")
 let currentDeck
 let match
 let miss
