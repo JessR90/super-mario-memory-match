@@ -107,12 +107,6 @@ function countdownTimer(timeLeft = 30) {
 
 // Game ends when all matches are found or timer hits 0
 function endGame(){
-  // winTotal.innerText = win
-  // lossTotal.innerText = loss
-  // const winLoss = document.getElementsByClassName('count-results')
-  // for (let i=0; i< winLoss.length; i++){
-  //   winLoss[i].style.display = "block"
-  // }
   playAgainBtn.style.display = "block"
   isFlipping = false
 }
@@ -120,14 +114,6 @@ function endGame(){
 // Reset game state, flips cards all facedown, start timer, hides win/loss msgs and play again btn
 function resetGame(){
   playAgainBtn.style.display = "none"
-  // win = 0
-  // loss = 0
-  // winTotal.innerText = win
-  // lossTotal.innerText = loss
-  // const winLoss = document.getElementsByClassName('count-results')
-  // for (let i=0; i< winLoss.length; i++){
-  //     winLoss[i].style.display = "none"
-  // }
 
   countdownTimer()
   const revealedCards = document.getElementsByClassName('revealed')
