@@ -21,8 +21,6 @@ const classicButton = document.getElementsByClassName("classic")
 const cardEls = document.querySelectorAll(".facedown")
 const resetButton = document.getElementsByClassName("reset")
 const playAgainBtn = document.getElementById('play-again')
-const winTotal = document.getElementById('win-count')
-const lossTotal = document.getElementById('loss-count')
 /*-------------------------------- Functions --------------------------------*/
 // Shuffle board and start game
 function init() {
@@ -109,11 +107,13 @@ function countdownTimer(timeLeft = 30) {
 function endGame(){
   playAgainBtn.style.display = "block"
   isFlipping = false
+  backgroundMusic.pause()
 }
 
 // Reset game state, flips cards all facedown, start timer, hides win/loss msgs and play again btn
 function resetGame(){
   playAgainBtn.style.display = "none"
+  backgroundMusic.play()
 
   countdownTimer()
   const revealedCards = document.getElementsByClassName('revealed')
