@@ -3,6 +3,9 @@ console.log("Super Mario Match Game")
 
 /*-------------------------------- Constants --------------------------------*/
 const board = ["flower", "flower", "flower", "flower", "mushroom", "mushroom", "mushroom", "mushroom", "star", "star", "star", "star", "tencoin", "tencoin", "twentycoin", "twentycoin", "chest", "chest"]
+const backgroundMusic = new Audio("../assets/audio/backgroundmusic.mp3")
+const cardMatch = new Audio("../assets/audio/cardmatch.mp3")
+const cardMiss = new Audio("../assets/audio/cardmiss.mp3")
 let currentDeck
 let match
 let miss
@@ -57,11 +60,13 @@ function handleClick(evt) {
           cardEls[secCarSel].classList.add("matched")
           win++
           resetPicks()
+          cardMatch.play()
       } else {
           setTimeout(() => {
               hideCard(firCarSel)
               hideCard(secCarSel)
               loss++
+              cardMiss.play()
               resetPicks()
           }, 1000)
       }
@@ -96,9 +101,10 @@ function countdownTimer(timeLeft = 30) {
       endGame()
     }
   }, 1000)
+  backgroundMusic.play()
 }
 
-//  Game ends when all matches are found or timer hits 0
+// Game ends when all matches are found or timer hits 0
 function endGame(){
   winTotal.innerText = win
   lossTotal.innerText = loss
@@ -121,6 +127,7 @@ function resetGame(){
   for (let i=0; i< winLoss.length; i++){
       winLoss[i].style.display = "none"
   }
+
   countdownTimer()
   const revealedCards = document.getElementsByClassName('revealed')
   const revCardsArray = Array.from(revealedCards)
